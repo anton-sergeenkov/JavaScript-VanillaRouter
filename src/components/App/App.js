@@ -2,20 +2,25 @@ import PageMenu from '../PageMenu';
 import PageItems from '../PageItems';
 import PageAbout from '../PageAbout';
 
+import classes from './App.css';
+
 class App {
     constructor() {
         this.pageMenu = new PageMenu();
         this.pageItems = new PageItems();
         this.pageAbout = new PageAbout();
     }
-    
+
+    // 
+    // this.pageItems.render()
+    // this.pageAbout.render()
+
     render() {
         return `
-        <h1>App</h1>
-        ${this.pageMenu.render()}
-        ${this.pageItems.render()}
-        ${this.pageAbout.render()}
-    `;
+            <div class="${classes.wrapper}">
+                ${this.pageMenu.render()}
+            </div>
+        `;
     }
 }
 
