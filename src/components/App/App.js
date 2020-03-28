@@ -16,11 +16,9 @@ class App {
         const url = hash ? hash : '#';
 
         const component = routes.filter(item => item.url === url);
-        const a = component[0].component;
+        const html = component[0].getComponent();
 
-        console.log(a);
-
-        // console.log(b.render());
+        console.log(html);
     }
 
     render() {

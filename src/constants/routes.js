@@ -3,16 +3,39 @@ import PageMenu from '../components/PageMenu';
 import PageItems from '../components/PageItems';
 import PageAbout from '../components/PageAbout';
 
-const pageIndex = new PageIndex();
-const pageMenu = new PageMenu();
-const pageItems = new PageItems();
-const pageAbout = new PageAbout();
-
 const routes = [
-    { title: 'Главная', url: '#',      component: pageIndex.render() },
-    { title: 'Меню',    url: '#menu',  component: pageMenu.render() },
-    { title: 'Товары',  url: '#items', component: pageItems.render() },
-    { title: 'О нас',   url: '#about', component: pageAbout.render() }
+    {
+        title: 'Главная',
+        url: '#',
+        getComponent() {
+            const pageIndex = new PageIndex();
+            return pageIndex.render();
+        }
+    },
+    {
+        title: 'Меню',
+        url: '#menu',
+        getComponent() {
+            const pageMenu = new PageMenu();
+            return pageMenu.render();
+        }
+    },
+    {
+        title: 'Товары',
+        url: '#items',
+        getComponent() {
+            const pageItems = new PageItems();
+            return pageItems.render();
+        }
+    },
+    {
+        title: 'О нас',
+        url: '#about',
+        getComponent() {
+            const pageAbout = new PageAbout();
+            return pageAbout.render();
+        }
+    },
 ];
 
 export default routes;
