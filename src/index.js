@@ -1,6 +1,6 @@
 import App from './components/App';
+import { NODE_ROOT } from './constants/nodes';
 
 const app = new App();
-const root = document.getElementById('root');
 
-root.innerHTML = app.render();
+NODE_ROOT.innerHTML = app.render();
