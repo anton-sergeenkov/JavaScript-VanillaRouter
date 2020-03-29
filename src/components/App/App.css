@@ -1,3 +1,8 @@
 body {
     font-family: sans-serif;
+    max-width: 1200px;
+    margin: auto;
+}
+.wrapperContent {
+    padding: 10px 30px;
 }

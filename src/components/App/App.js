@@ -20,7 +20,11 @@ class App {
         const component = routes.filter(item => item.url === url);
         const html = component[0] ? component[0].getComponent() : this.page404.render();
 
-        NODE_PAGES.innerHTML = html;
+        NODE_PAGES.innerHTML = `
+            <div class="${classes.wrapperContent}">
+                ${html}
+            </div>
+        `;
     }
 
     render() {
