@@ -6,7 +6,7 @@ class PageItems {
     }
     
     render() {
-        return `<h1>PageItems</h1>`
+        return `<h2>PageItems</h2>`
     }
 }
 

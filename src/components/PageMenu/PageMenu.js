@@ -6,7 +6,7 @@ class PageMenu {
     }
     
     render() {
-        return `<h1>PageMenu</h1>`
+        return `<h2>PageMenu</h2>`
     }
 }
 

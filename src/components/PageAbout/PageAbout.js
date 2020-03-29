@@ -6,7 +6,7 @@ class PageAbout {
     }
     
     render() {
-        return `<h1>PageAbout</h1>`
+        return `<h2>PageAbout</h2>`
     }
 }
 

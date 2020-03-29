@@ -6,7 +6,7 @@ class PageIndex {
     }
     
     render() {
-        return `<h1>PageIndex</h1>`
+        return `<h2>PageIndex</h2>`
     }
 }
 
