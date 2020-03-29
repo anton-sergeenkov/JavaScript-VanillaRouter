@@ -2,6 +2,7 @@ body {
     font-family: sans-serif;
     max-width: 1200px;
     margin: auto;
+    line-height: 1.7;
 }
 .wrapperContent {
     padding: 10px 30px;

@@ -10,8 +10,21 @@ class PageItems {
     }
 
     render() {
+        let html = '';
+        
+        this.items.forEach(({ name, quantity, price }) => {
+            html += `
+                <div class="${classes.item}">
+                    <h3>${name}</h3>
+                    <p>🍪 <strong>Количество:</strong> ${quantity}</p>
+                    <p>🍪 <strong>Цена:</strong> ${price}</p>
+                </div>
+            `
+        })
+
         return `
             <h2>Товары</h2>
+            <div class="${classes.wrapper}">${html}</div>
         `
     }
 }
