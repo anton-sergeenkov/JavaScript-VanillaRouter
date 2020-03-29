@@ -1,3 +1,4 @@
+import BackNavigation from '../BackNavigation';
 import classes from './PageItems.css';
 
 class PageItems {
@@ -7,6 +8,7 @@ class PageItems {
             { name: 'item2', quantity: 5, price: 5 },
             { name: 'item3', quantity: 3, price: 30 }
         ];
+        this.backNavigation = new BackNavigation();
     }
 
     render() {
@@ -22,8 +24,8 @@ class PageItems {
             `
         })
 
-        return `
-            <h2>Товары</h2>
+        return `            
+            <h2>${this.backNavigation.render()} Товары</h2>
             <div class="${classes.wrapper}">${html}</div>
         `
     }
