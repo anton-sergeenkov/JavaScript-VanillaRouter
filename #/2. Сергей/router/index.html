@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="router">
+    <a class="route" onclick="window.history.back()">Назад</a>
+    <a class="route" onclick="window.history.forward()">Вперед</a>
+    <h3 id="currentHash"></h3>
+    <div id="history">
+        <h3>Story: </h3>
+        <div id="lastHistory"></div>
+    </div>
+</div>
+
+<div id="view"></div>
+
+
+<script src="../dist/bundle.js"></script>
+</body>
+</html>
+
