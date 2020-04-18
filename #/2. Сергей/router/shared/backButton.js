@@ -1,1 +1,0 @@
-export const backButton = '<button class="backButton" onclick="window.history.back()">Back</button>';
